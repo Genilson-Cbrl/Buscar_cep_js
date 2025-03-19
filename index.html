@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/scripts/script.js" defer></script>
+    <title>Buscar Cep</title>
+  </head>
+  <body>
+    <header>
+    <h1>Encontre um bairro atraves do cep</h1>
+    <p>
+      Descubra rapidamente informações sobre qualquer CEP no Brasil com nosso
+      buscador de CEP. Basta inserir o código postal e obter detalhes como rua,
+      bairro, cidade e estado em segundos.
+    </p>
+    <ul>
+        <li>Pesquisa rápida e eficiente</li>
+        <li>Dados precisos e atualizados</li>
+        <li>Interface simples e intuitiva</li>
+    </ul>
+    <p>Facilite sua vida e encontre endereços de forma prática. Experimente agora!</p>
+    </header>
+
+    <main>
+        <section id="busc">
+        <h2>Busque seu endereço</h2>
+        <form>
+            <label for="cep">Digite o seu CEP:</label>
+            <input type="text" 
+            name="buscCep" 
+            id="cep" 
+            placeholder="Digite o seu CEP" 
+            required>
+            <div id="btnDiv">
+            <button id="Buscar">Buscar</button>
+            </div>
+            
+        </form>
+        </section>
+
+        <section id="rep">
+            <p><strong>Estado: </strong><span id="estado"></span></p>
+            <p><strong>Cidade: </strong><span id="cidade"></span></p>
+            <p><strong>Bairro: </strong><span id="bairro"></span></p>
+            <p><strong>Logradouro: </strong><span id="logradouro"></span></p>
+        </section>
+
+    </main>
+  </body>
+</html>
